@@ -3,7 +3,9 @@
 <head>
 	<title> Recent Adventures
 	</title>
+	<!-- This is the style sheet from HTML5UP-->
 	<link rel="stylesheet" href="assets/css/suplement.css" />
+	<!--This is a supplemental style sheet I made-->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<style>
 		#map1 {
@@ -27,8 +29,7 @@
 				</div>
 			<div class="header"></div>
 				<div class= "padding">
-					<a href="https://www.wta.org/go-hiking/hikes/toleak-point"><h1> Toleak Point, Washington Coast </h1></a>
-					<p> A coastal beach trail along the Olympic Peninsula. Toleak Point can be accessed from the south at Oil City, or from the north at Third Beach </p>
+					<p> Check out a map of some of my recent trips and hikes, and some photos below.  Click on the place names above the photos to go to the Washington Trails Association page on each hike for more information and the latest trip reports.  </p>
 				</div>	
 
 				<div id="map1"></div> 
@@ -37,16 +38,32 @@
 					function initMap() {
 						var toleak= 
 							{lat:47.835492, lng:-124.538295};
-						var maptoleak= new google.maps.Map(document.getElementById('map1'), {
-		 						zoom:16,
-		 						center:toleak,
+						var palouse= 
+							{lat:46.663512, lng:-118.223595};
+						var heliotrope=
+							{lat:48.802847, lng:-121.895748}; 
+						var centermap=
+							{lat:47.161190, lng:-120.139515};
+						var map= new google.maps.Map(document.getElementById('map1'), {
+		 						zoom:7,
+		 						center:centermap,
 		 						gestureHandling: 'cooperative',
 		 						streetViewControl: false,
 		 						});
 		 				var markertoleak= new google.maps.Marker({
 		 						position: toleak,
-		 						map: maptoleak,
+		 						map: map,
 		 						title:"Toleak Point",
+		 						});
+		 				var markerpalous= new google.maps.Marker({
+		 						position: palouse,
+		 						map: map,
+		 						title:"Palouse Falls",
+		 						});
+		 				var markerheliotrope= new google.maps.Marker({
+		 						position: heliotrope,
+		 						map: map,
+		 						title:"Heliotrope Ridge Trailhead",
 		 						});
 		 				}
 		 		</script>
@@ -56,8 +73,14 @@
     			</script>
     			</div>
 
+<!--Toleak-->
+<div class="header"></div>
+		<div class= "padding">
+			<a href="https://www.wta.org/go-hiking/hikes/toleak-point"><h1> Toleak Point, Washington Coast </h1></a>
+				<p> A coastal beach trail along the Olympic Peninsula. Toleak Point can be accessed from the south at Oil City, or from the north at Third Beach </p>
+		</div>	
 <br>
-	<!-- This code was taken from the W3 Schools website -->
+	<!-- This code was taken from the W3 Schools website.  It creates 3 columns of photos side by side.  This code is used several times later-->
 	<div class="row">
  		 <div class="column">
    			 <img src="images/toleakpic1.jpg" alt="" style="width:100%"/>
@@ -70,51 +93,50 @@
     </div>
     </div>				
 		<br>
-	<div class= container">			
+
+<!--Palouse-->
+
+<div class= container">			
 			<div class="header"></div>	
 			<div class= "padding">
 					<a href="https://www.wta.org/go-hiking/hikes/palouse-falls"><h1> Palouse Falls, Eastern Washington</h1></a>
 					<p>A waterfall formed by glacial floods at the end of the last ice age.  This waterfall cuts through layers of basalt flows to form a deep canyon. </p>
 				</div>	
 
-				<div id="map2"></div> 
-					<script>
-					function initMap() {
-						var palouse= 
-							{lat:46.663512, lng:-118.223595};
-						var mappalouse= new google.maps.Map(document.getElementById('map2'), {
-		 						zoom:16,
-		 						center:palouse,
-		 						gestureHandling: 'cooperative',
-		 						streetViewControl: false,
-		 						});
-		 				var markerpalous= new google.maps.Marker({
-		 						position: palouse,
-		 						map: mappalouse,
-		 						title:"Palouse Falls",
-		 						});
-		 				
-		 				}
-		 		</script>
-		 	        </div>
-
 <div class="row">
  		 <div class="column">
    			 <img src="images/palousepic1.jpg" alt="" style="width:100%"/>
-    </div>
+    	</div>
   		<div class="column">
    	 		<img src="images/palousepic2.jpg" alt="" style="width:100%"/>
-    </div>
-	<div class="column">
-    	<img src="images/palousepic3.jpg" alt="" style="width:100%">
-    </div>
-    </div>				
+   		</div>
+		<div class="column">
+    		<img src="images/palousepic3.jpg" alt="" style="width:100%">
+    	</div>
+    	</div>				
 		<br>
 
-				<br>
-					<h1> <a href= "index.html"> Back Home </a></h1>
+<!--Heliotrope-->
 
-								
+<div class="header"></div>
+	<div class= "padding">
+		<a href="https://www.wta.org/go-hiking/hikes/heliotrope-ridge"><h1> Heliotrope Ridge, Mt. Baker </h1></a>
+					<p> Dayhike with several river crossings up to a view of a glacier. </p>
+	</div>	
+<div class="row">
+ 		 <div class="column">
+   			 <img src="images/helipic1.jpg" alt="" style="width:100%"/>
+    </div>
+  		<div class="column">
+   	 		<img src="images/helipic2.jpg" alt="" style="width:100%"/>
+    </div>
+	<div class="column">
+    	<img src="images/helipic3.jpg" alt="" style="width:100%">
+    </div>
+  	<div class="header"></div>
+    <br>
+		<h1> <a href= "index.html"> Back Home</a></h1>		
+			<div class="header"></div>						
 </body>
 </html>
 

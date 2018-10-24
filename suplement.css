@@ -1,0 +1,37 @@
+/*
+This is my own supplementary code I wrote.  I wanted to keep it seperate from the main css file pthat came with HTML5UP
+*/
+
+<style>
+.map{
+	width:100%;
+	height:100%;
+	background-color: gray;
+}
+*{
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    display: table;
+}
+.header {
+  height: 20px;
+  width: 100%;
+  background-color: #4acaa8 ;
+}
+
+.padding{
+	padding:1em;
+}
+</style>

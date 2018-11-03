@@ -1,42 +1,146 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Template thanks to:
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-	<!--This is the CSS and JavaScript libraries-->
-	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
-   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-   crossorigin=""/>
+	<head>
+		<title>Lindsey Hannah Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/suplement.css" />
 
-   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
-   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-   crossorigin=""></script>
+	</head>
+	<body class="is-preload">
 
-    <style>
-    	#map {height: 80vh; background-color: grey;}
-    </style>
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/me.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Lindsey Hannah</a></h1>
+					<p>B.S. Earth Science <br />
+					 M.S. Geospatial Technology (in progress)
+					 <br>
+					</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#two">Skills</a></li>
+						<li><a href="#three">Portfolio</a></li>
+						<li><a href="#four">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="mailto:lindsey.marie.hannah@gmail.com" class="icon fa- fa-envelope"><span class= "label">Email</span></a></li>
+						<li><a href="https://www.facebook.com/TheBinzness" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/lmarieosu09/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/lindsey-hannah-80202aa8/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					
+					</ul>
+				</footer>
+			</section>
 
-	<title>
-		
-	</title>
-</head>
-<body>
-	<div id= "map" </div>
-	<Script>
+		<!-- Wrapper -->
 
-	var Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext}', {
-	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-	subdomains: 'abcd',
-	minZoom: 0,
-	maxZoom: 20,
-	ext: 'png'
-});
-map.addLayer(Stamen_Toner);
+			<div id="wrapper">
 
-</Script>
+				<!-- Main -->
+					<div id="main">
 
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="images/secondBeach.jpg" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>About me:</h2>
+										<p>Geologist by training, mountain woman in practice, and certified map nerd<br />
+										</p>
+									</header>
+									<p>I am currently a Masters Student in the<a href= "http://www.tacoma.uw.edu/urban-studies/ms-program-overview" style= "color: #730099"> Urban Studies Progam </a>at the University of Washington in Tacoma. Im interested in using geospatial data to make our cities a more equitable place to live with a focus on housing and resource availability.  
+									 <br><br>
+									
 
+									Originally from Ohio, I found my way to the west coast as an Americorp volunteer with Habitat for Humanity. Before now, I've served in a lot of different roles, from building houses to overseeing major maintenance operations on nuclear powered aircraft carriers.  Currently, I serve as the technical manager for a Japanese specialty building product manufacturer.  In my free time, you can find me hiking, fishing, backpacking, baking, and petting all the dogs.
+									<br><br>
 
+									<a href= "maps.html" style= "color: #730099"> See some of my latest hikes and trips. </a>
+									</p>
+								</div>
+							</section>
 
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Skills</h3>
+									<p>What I do have are a very particular set of skills. Skills I have aquired over a very long career.</p>
+									<ul class="feature-icons">
+										<li class="fa-code">Languages: Python, HTML (basic)</li>
+										<li class="fa-id-card">Certified Geologist in Training</li>
+										<li class="fa-pencil">AutoCAD and Revit</RP></li>
+										<li class="fa-book">Technical Writing</li>
+										<li class="fa-map-o">ESRI ArcGIS </li>
+										<li class="fa-hand-scissors-o">Rock-Paper-Scissors master competitor</li>
+									</ul>
+								</div>
+							</section>
 
-</body>
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Portfolio</h3>
+									<p>Check out my maps and projects.  This section will continue to update.</p>
+									<div class="features">
+										<article>
+											<a href="elwha.html" class="image"><img src="images/elwha.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Elwha River Dam Removal</h4>
+												<p>Utilization of Remote Sensing to Study Sediment Transport and Deposition
+													After Dam Removal on the Elwha River</p>
+											</div>
+										</article>
+									</section>
+							
+						<!--Four -->
+							<section id="four">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>Send me an email, or find me on social media</p>
+									<ul class="icons">
+									<li><a href="" class="icon fa- fa-envelope"><span class= "label">Email</span></a></li>
+									<li><a href="" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/lmarieosu09/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href=""class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					
+					</ul>
+								</div>
+							</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
-

@@ -1,134 +1,150 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Template thanks to:
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-	<!--This is the CSS library for Leaflet-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
-   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-   crossorigin=""/>
-   <!--The is the js for Leaflet-->
+	<head>
+		<title>Lindsey Hannah Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/suplement.css" />
 
-   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
-   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-   crossorigin=""></script> 
-   <!--The is the CSS  and JS for the marker Cluster plug in-->
-		 <link rel="stylesheet" href="Leaflet.markercluster-1.4.1/dist/MarkerCluster.css"/>
-		 <link rel="stylesheet" href="Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css"/>
-		 <script src="Leaflet.markercluster-1.4.1/dist/leaflet.markercluster-src.js"></script>
-    
-  
-   <!--The is the JS to make Jquery work for #getJSON-->
-   <script src="jquery-2.1.1.min.js"></script> 
+	</head>
+	<body class="is-preload">
 
-    <style>
-    	#map {height: 60vh; background-color: grey;}
-    	body {background-color: Azure;}
-    	h1 {color: MidnightBlue; padding: 10px}
-    	p {color: MidnightBlue; padding: 5px;}
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/me.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Lindsey Hannah</a></h1>
+					<p>B.S. Earth Science <br />
+					 M.S. Geospatial Technology (in progress)
+					 <br>
+					</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About</a></li>
+						<li><a href="#two">Skills</a></li>
+						<li><a href="#three">Portfolio</a></li>
+						<li><a href="#four">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="" class="icon fa- fa-envelope"><span class= "label">Email</span></a></li>
+						<li><a href="" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					
+					</ul>
+				</footer>
+			</section>
 
+		<!-- Wrapper -->
 
+			<div id="wrapper">
 
-    </style>
+				<!-- Main -->
+					<div id="main">
 
-	<title>
-     Superfund sites in Washington 
-	</title>
-</head>
-<body>
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="images/secondBeach.jpg" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>About me:</h2>
+										<p>Geologist by training, mountain woman in practice, and certified map nerd<br />
+										</p>
+									</header>
+									<p>I am currently a Masters Student in the<a href= "http://www.tacoma.uw.edu/urban-studies/ms-program-overview" style= "color: #730099"> Urban Studies Progam </a>at the University of Washington in Tacoma. Im interested in using geospatial data to make our cities a more equitable place to live with a focus on housing and resource availability.  
+									 <br><br>
+									
 
+									Originally from Ohio, I found my way to the west coast as an Americorp volunteer with Habitat for Humanity. Before now, I've served in a lot of different roles, from building houses to overseeing major maintenance operations on nuclear powered aircraft carriers.  Currently, I serve as the technical manager for a Japanese specialty building product manufacturer.  In my free time, you can find me hiking, fishing, backpacking, baking, and petting all the dogs.
+									<br><br>
 
-	<h2> EPA Superfund Sites in Washington State </h2>
-	<hr>
-		<p> Superfund sites are those areas where hazardous waste has been dumped or improperly handled. In cases where the responsible party can be identified, the EPA can force these parties to perform or pay for the cleanup.  In cases where no party can be identified, federal funding exists for cleanups.  The NPL (National Priorities List) is an up to date list of these sites.  Sites are removed once they have been sufficiently cleaned up. </P>
-		<p> Each icon represents a Superfund site. Click on the icons to see details about the site as well as the current NPL status. Sites that have been sufficiently cleaned  (and removed from the NPL) are marked with a leaf.  Current NPL sites are marked with a skull. Federal legislative districts are also mapped. If you are concerned about the status or pace of cleanup of any site in your district, contact you Federal Representative using the contact information in the popup. Information is current as of 11/12/2018 </p>
+									<a href= "maps.html" style= "color: #730099"> See some of my latest hikes and trips. </a>
+									</p>
+								</div>
+							</section>
 
-	<hr>
-	<a href= "https://www.epa.gov/superfund/what-superfund"> To learn more about EPA Superfund sites, click here. </a>
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3>Skills</h3>
+									<p>What I do have are a very particular set of skills. Skills I have aquired over a very long career.</p>
+									<ul class="feature-icons">
+										<li class="fa-code">Languages: Python, HTML (basic)</li>
+										<li class="fa-id-card">Certified Geologist in Training</li>
+										<li class="fa-pencil">AutoCAD and Revit</RP></li>
+										<li class="fa-book">Technical Writing</li>
+										<li class="fa-map-o">ESRI ArcGIS </li>
+										<li class="fa-hand-scissors-o">Rock-Paper-Scissors master competitor</li>
+									</ul>
+								</div>
+							</section>
 
-	<div id= "map"> </div>
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3>Portfolio</h3>
+									<p>Check out my maps and projects.  This section will continue to update.</p>
+									<div class="features">
+										<article>
+											<a href="elwha.html" class="image"><img src="images/elwha.jpg" alt="" /></a>
+											<div class="inner">
+												<h4>Elwha River Dam Removal</h4>
+												<p>Utilization of Remote Sensing to Study Sediment Transport and Deposition
+													After Dam Removal on the Elwha River</p>
+											<a href="https://lindseyhannah.github.io/superfund/" class="image"><img src="images\superfund.jpg alt="" /></a>
+											<div class="inner">
+												<h4>EPA Superfund Sites</h4>
+												<p>Map of past and current Superfund Sites in Washington State. </p>
+											</div>
+										</article>
+									</section>
+							
+						<!--Four -->
+							<section id="four">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>Send me an email, or find me on social media</p>
+									<ul class="icons">
+									<li><a href="" class="icon fa- fa-envelope"><span class= "label">Email</span></a></li>
+									<li><a href="" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/lmarieosu09/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href=""class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					
+					</ul>
+								</div>
+							</section>
 
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
 
-	<Script>
-	//import the map tile
-    var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
-	maxZoom: 18,
-	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-});
-    //create map variable and set the zoom/coordinates.  Add to map tile 
-	var map = new L.map("map", {
-		center:new L.LatLng(47.4, -120.2),
-		zoom: 7
-	});
-    map.addLayer(OpenStreetMap_DE);
+			</div>
 
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-
-    //Import the GeoJson data with Superfund sites and add to map
-	//Source: https://skytruth-org.carto.com/tables/epa_superfund_sites/public
-	$.getJSON("superfundWA.geojson",function(data){
-        var skullIcon= L.icon({
-        	iconUrl: 'skull.png',
-        	iconSize: [26,26]
-        	
-        });
-
-        var leafIcon=L.icon({
-        	iconUrl: 'leaf.png',
-        	iconSize: [22,22]
-        });
-
-		var superfund= L.geoJson(data ,{
-			pointToLayer: function(feature,latlng){
-				if (feature.properties.nationalprioritiesliststatus === "Currently on the Final NPL") {
-					console.log("hello1");
-					var marker= L.marker(latlng, {icon: skullIcon});
-					marker.bindPopup(feature.properties.sitename + '<br/>' + feature.properties.streetaddress + '<br/>' + feature.properties.	nationalprioritiesliststatus);
-						return marker;
-					}
-				else if (feature.properties.nationalprioritiesliststatus=== "Deleted from the Final NPL") {
-					console.log("hello2");
-					var marker= L.marker(latlng, {icon: leafIcon});
-					marker.bindPopup(feature.properties.sitename + '<br/>' + feature.properties.streetaddress + '<br/>' + feature.properties.nationalprioritiesliststatus);
-						return marker;
-					}
-            
-				
-
-				/*marker.bindPopup(feature.properties.sitename + '<br/>' + feature.properties.streetaddress + '<br/>' + feature.properties.nationalprioritiesliststatus);
-				return marker;*/
-			}
-		});
-		var clusters= L.markerClusterGroup();
-		clusters.addLayer(superfund);
-		map.addLayer(clusters);
-});
-//Source: https://www.census.gov/geo/maps-data/data/cbf/cbf_sld.html
-//converted via mapshaper to GEOJSON
-	var polystyle= {
-		weight: .7,
-		fillcolor: "000000",
-		fillopacity: 1,
-		color: "#B22222",
-		opacity: .8
-	};
-
-	$.getJSON("map.geojson",function(data){
-		L.geoJson(data ,{
-			style: polystyle,
-			onEachFeature: function(feature, featureLayer) {
-				featureLayer.bindPopup(feature.properties.District_N+ '<br/>' + feature.properties.REP + '<br/>' + feature.properties.PHONE);
-				
-			}
-		}).addTo(map);
-});
-
-
-</Script>
-
-	<hr>
-
-
-
-
-
-</body>
+	</body>
 </html>
